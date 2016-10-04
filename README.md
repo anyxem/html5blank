@@ -6,7 +6,7 @@ Powerful shell for rapidly deploying your WordPress projects.
 * Website: [html5blank.com](http://html5blank.com)
 * Twitter: [@html5blank](http://twitter.com/html5blank)
 * Author : [Todd Motto](http://toddmotto.com) // [@toddmotto](http://twitter.com/toddmotto)
-
+* Now with stylus insetad of SASS
 
 ## Getting Started with HTML5 Blank
 

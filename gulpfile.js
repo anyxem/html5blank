@@ -71,11 +71,10 @@ gulp.task( "copy", function() {
 });
 
 /** CSS Preprocessors */
-gulp.task( "sass", function () {
-	return gulp.src( "src/css/sass/style.scss" )
-		.pipe( $.rubySass({
-			style: "expanded",
-			precision: 10
+gulp.task( "stylus", function () {
+	return gulp.src( "src/css/styl/style.styl" )
+		.pipe( $.stylus({
+			compressed: false
 		}))
 		.on( "error", function( e ) {
 			console.error( e );
@@ -84,7 +83,7 @@ gulp.task( "sass", function () {
 });
 
 /** STYLES */
-gulp.task( "styles", [ "sass" ], function() {
+gulp.task( "styles", [ "stylus" ], function() {
 	console.log( "`styles` task run in `" + env + "` environment" );
 
 	var stream = gulp.src( cssminSrc[ env ] )
